@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "https://qrverse-backend.onrender.com";
+const API_URL = "https://qrverse-backend.onrender.com/api/upload";
 // const API_URL = "http://192.168.135.3:3000/api/upload";
 
 const uploadService = async (file, messageType) => {
