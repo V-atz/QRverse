@@ -24,7 +24,7 @@ const serverStart = async () => {
 
     //server setup
     app.listen(port, () => {
-      // console.log(`Server started at PORT ${port}`);
+      console.log(`Server started at PORT ${port?port:'5000'}`);
     });
   } catch (error) {
     console.error("Server failed to start due to Database connection issue.");
