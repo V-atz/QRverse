@@ -1,5 +1,5 @@
 const cloudinary = require("../config/cloudinary");
-const File = require("../models/fileModel");
+// const File = require("../models/fileModel");
 const multer = require('multer')
 const fs = require('fs')
 
@@ -34,10 +34,10 @@ exports.uploadFileToCloudinary = async (req, res) => {
       resource_type: "auto",
     });
 
-    const newFile = await File.create({
-      fileUrl: result.secure_url,
-      fileType: req.body.fileType, //img,vid,txt,audio,url
-    });
+    // const newFile = await File.create({
+    //   fileUrl: result.secure_url,
+    //   fileType: req.body.fileType, //img,vid,txt,audio,url
+    // });
 
     //delete file from localstorage after uploading to cloudinary
     fs.unlinkSync(req.file.path)
