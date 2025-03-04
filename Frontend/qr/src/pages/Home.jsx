@@ -8,7 +8,7 @@ import { useUserFileContext } from "../contexts/userFileContext";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import CustomizeQR from "../components/CustomizeQR";
-import QRGenerator from "../components/QrGenerator";
+import QRGenerator from "../components/QRGenerator";
 import QRCode from "../components/QRCode";
 
 function Home() {
