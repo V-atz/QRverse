@@ -18,7 +18,7 @@ const FileUploader = ({ label, onChange }) => {
 
   const handleUpload = async (file) => {
     if (!file) {
-      console.log("No file selected");
+      // console.log("No file selected");
       return;
     }
 
@@ -28,7 +28,7 @@ const FileUploader = ({ label, onChange }) => {
       //api call to upload files through "uploadService"
       const response = await uploadService(file, label);
       setCloudinaryFileUrl(response?.fileUrl);
-      console.log("Uploaded file URL:", response.fileUrl);
+      // console.log("Uploaded file URL:", response.fileUrl);
       toast.update(toastId, {
         render: "File uploaded successfully!",
         type: "success",
@@ -54,7 +54,7 @@ const FileUploader = ({ label, onChange }) => {
       return;
     }
 
-    console.log("file selected: ", file)
+    // console.log("file selected: ", file)
 
     //file size validation
     const fileSizeMB = file.size / (1024 * 1024);

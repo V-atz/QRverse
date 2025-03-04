@@ -11,7 +11,7 @@ function CustomizeQR() {
     "💼 Professional",
   ];
   const { themeStyle, setThemeStyle, enableCustomization } = useUserFileContext();
-  console.log(themeStyle);
+  // console.log(themeStyle);
 
   return (
     <div className="flex flex-wrap items-center mt-1 gap-x-1 gap-y-2">
